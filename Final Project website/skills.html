@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Portfolio Website Design</title>
+    <link rel="stylesheet" href="style.css">
+    <!----Font awesome cdn  font icon css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+</head>
+<body>
+     <div class="hero-header">
+        <div class="wrapper">
+            <header>
+                <div class="logo">
+                    <i class="fa-solid fa-crown"></i>
+                    <div class="logo-text">Russel Reyes</div>
+                </div>
+                <nav>
+                    <div class="togglebtn">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <ul class="navlinks">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="skills.html">Skills</a></li>
+                        <li><a href="about.html">About me</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+            </header>
+            <div class="container">
+                 <div class="hero-pic">
+                    <img src="Image/html.jpg" alt="profile pic">
+                 </div>
+                 <div class="hero-text">
+                    <h1>HTML</h1>
+                    <p>Hypertext Markup Language (HTML) is the standard markup language for documents designed to be displayed in a web browser. It defines the content and structure of web content. It is often assisted by technologies such as Cascading Style Sheets (CSS) and scripting languages such as JavaScript
+                    </p>
+                 </div>
+            </div>
+            <div class="container">
+                 <div class="hero-pic">
+                    <img src="Image/mysql.jpg" alt="profile pic">
+                 </div>
+                 <div class="hero-text">
+                    
+                    <h1>MySQL</h1>
+                    <p>MySQL is a relational database management system (RDBMS) developed by Oracle that is based on structured query language (SQL). A database is a structured collection of data. It may be anything from a simple shopping list to a picture gallery or a place to hold the vast amounts of information in a corporate network.
+                    </p>
+                 </div>
+            </div>
+            <div class="container">
+                 <div class="hero-pic">
+                    <img src="Image/java.jpg" alt="profile pic">
+                 </div>
+                 <div class="hero-text">
+                    <h1>JavaScript</h1>
+                    <p>JavaScript is a scripting language for creating dynamic web page content. It creates elements for improving site visitors' interaction with web pages, such as dropdown menus, animated graphics, and dynamic background colors
+                    </p>
+                 </div>
+            </div>
+            <div class="container">
+                 <div class="hero-pic">
+                    <img src="Image/python.jpg" alt="profile pic">
+                 </div>
+                 <div class="hero-text">
+                    <h1>Python</h1>
+                    <p>Python is used for server-side web development, software development, mathematics, and system scripting, and is popular for Rapid Application Development and as a scripting or glue language to tie existing components because of its high-level, built-in data structures, dynamic typing, and dynamic binding.
+                    </p>
+                 </div>
+            </div>
+            <div class="container">
+                 <div class="hero-pic">
+                    <img src="Image/PHP.jpg" alt="profile pic">
+                 </div>
+                 <div class="hero-text">
+                    <h1>PHP</h1>
+                    <p>PHP is a general-purpose scripting language geared towards web development. It was originally created by Danish-Canadian programmer Rasmus Lerdorf in 1993 and released in 1995. The PHP reference implementation is now produced by the PHP Group.
+                    </p>
+                 </div>
+            </div>
+        </div>
+     </div>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.min.js"></script>
+     <script>
+        var togglebtn=document.querySelector(".togglebtn");
+        var nav=document.querySelector(".navlinks");
+        var links=document.querySelector(".navlinks li");
+
+        togglebtn.addEventListener("click", function(){
+            this.classList.toggle("click");
+            nav.classList.toggle("open");
+        })
+
+        var typed=new Typed(".input",{
+            strings:["Frontend Developer","UX Designer","Web Developer"],
+            typedSpeed:70,
+            backSpeed:55,
+            loop:true
+        })
+     </script>
+</body>
+</html>
